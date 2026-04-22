@@ -29,6 +29,13 @@ public:
     std::vector<Particle> particles;
     std::vector<bool> active;
 
+    // Constructor for registry
+    Registry() {
+        transforms.resize(MAX_ENTITIES);
+        particles.resize(MAX_ENTITIES);
+        active.resize(MAX_ENTITIES, false); 
+    }
+
     // Constructor to initialize the registry with the maximum number of entities
     Entity createEntity() {
         for (uint32_t i =0; i < MAX_ENTITIES; i++) {
