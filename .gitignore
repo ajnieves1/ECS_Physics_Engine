@@ -5,6 +5,7 @@ obj/
 *.exe
 *.out
 *.app
+.o
 
 # --- IDE and System Files ---
 .vscode/
